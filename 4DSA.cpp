@@ -1,7 +1,7 @@
-//// pattern lines
+// // pattern lines
 
 
-//#include <iostream>
+// #include <iostream>
 // using namespace std;
 // int main(){
 //    int n = 26;
@@ -115,17 +115,17 @@
 
 
 
-// #include <iostream>
-// using namespace std;
-// int main(){
-//     int n=5;
-//     for(int i=0; i<n; i++){                  //print characters in pattern
-//         for(int j=0; j<i+1; j++){
-//             cout<<char('A'+i)<<" " ;
-//         }
-//         cout<<endl;
-//     } 
-// }
+#include <iostream>
+using namespace std;
+int main(){
+    int n=5;
+    for(int i=0; i<n; i++){                  //print characters in pattern
+        for(int j=0; j<i+1; j++){
+            cout<<char('A'+i)<<" " ;
+        }
+        cout<<endl;
+    } 
+}
 
 
 // #include <iostream>
@@ -158,30 +158,4 @@
    
 
 
-#include <iostream>
-using namespace std;
-
-int main() {
-    int n = 11;
-
-    for (int i = 0; i < n; i++) {
-        for (int j = 0; j < n; j++) {
-
-            // Middle finger (vertical)
-            if (j == n/2 && i < n-3)
-
-            // Palm (bottom block)
-            cout << "* ";
-            
-            else if (i >= n-3 && j >= n/2 - 3 && j <= n/2 + 3)
-                cout << "* ";
-
-            else
-                cout << "  ";
-        }
-        cout << endl;
-    }
-
-    return 0;
-}
 
